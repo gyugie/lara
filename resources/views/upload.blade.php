@@ -20,7 +20,7 @@
                 @endif
 
                 <form action="/upload/proses" method="POST" enctype="multipart/form-data">
-                    {{ csrf_field()}}
+                    <input type="hidden" name="_token" value="{{ csrf_field()}} ">
                     <div class="form-group">
 						<b>File Gambar</b><br/>
 						<input type="file" name="file[]">

@@ -12,6 +12,7 @@ class UploadController extends Controller
     }
 
     public function proses_upload(Request $request){
+   
         $this->validate($request, [
             'file'          => 'required',
             'keterangan'    => 'required'
